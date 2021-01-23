@@ -1,0 +1,30 @@
+<h2>My Heroes</h2>
+<div>
+  <label>Hero name:</label> <input #heroName />
+  <button (click)="add(heroName.value); heroName.value=''">
+    Add
+  </button>
+</div>
+<ul class="heroes">
+  <!-- 특정 조건을 만족할때 li에 Anlugar의 selected CSS클래스를 추가해서 스타일을 변경함 -->
+  <li *ngFor="let hero of heroes"
+    [class.selected]="hero === selectedHero"
+    (click)="onSelect(hero)">
+    <!-- "ngFor기능을 이용한 목록표시 -> heros요소에서 값을 가져와 루프(변수 hero로 하나씩 사용) -->
+    <!-- 여기서 접두사 *은 <li>요소와 그 하위 요소가 템플릿을 구성함을 나타냄. -->
+    <!-- 즉 그냥 ngFor구문은 템플릿 안에서 안의 요소를 지정해서 사용 가능하지만, *가 있으면 이미 템플릿 안의 DOM요소라고 판단해서 바로 요소가 사용 가능하게됨 -->
+    <!-- 이외에도 *ngIf, *ngSwitch 같은것도 있음-->
+    <!-- AppComponent메소드인 onSelect()를 호출하는 이벤트 바인딩(이번엔 클릭 이벤트)을 추가-->
+    <span class="badge">{{hero.id}}</span>
+    <span>{{hero.name}}</span>
+    <button class="delete"
+            (click)="delete(hero); $event.stopPropagation()">x
+    </button>
+  </li>
+</ul>
+<div *ngIf="selectedHero">
+  <h2>
+    {{selectedHero.name | uppercase}} is my hero <!-- 데이터 서식을 지정하기 위해 Pipe 연산자「|」을 이용 -->
+  </h2>
+  <button (click)="gotoDetail()">View Details</button>
+</div>
