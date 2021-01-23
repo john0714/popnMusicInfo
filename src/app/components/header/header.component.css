@@ -1,0 +1,11 @@
+h1 {
+  font-size: 2em;
+  color: #999;
+  margin-bottom: 0;
+}
+div {
+  border-bottom: 5px;
+  border-bottom-style: solid;
+  padding-bottom: 5px;
+  margin-bottom: 10px;
+}

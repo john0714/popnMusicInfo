@@ -9,7 +9,8 @@ import { AppRoutingModule } from './app-routing.module';
 import { InMemoryWebApiModule } from 'angular-in-memory-web-api';
 import { InMemoryDataService } from './services/in-memory-data.service';
 
-import { AppComponent } from './components/app.component';
+import { HeaderComponent } from './components/header/header.component';
+import { AppComponent } from './components/sideMenu/app.component';
 import { FormsModule } from '@angular/forms'; // ngModule은 FormsModule에 포함되 있으므로, FormsModule을 Import해서 사용
 import { HeroDetailComponent } from './components/hero-detail/hero-detail.component'; // 모든 컴포넌트는 하나의(그리고 오직 한번만) Angular모듈로 선언되어야함.
 import { HeroesComponent } from './components/heroes/heroes.component';
@@ -21,6 +22,7 @@ import { HeroSearchComponent } from './components/hero-search/hero-search.compon
   // 일반적으로 declarations배열은 모듈에 속한 Component, Pipe 및 Directive응용 프로그램 목록을 포함함.(자세한건 NgModules가이드 참고)
   // 다른 Component가 참조하기 전에 Component를 모듈에서 선언해야함
   declarations: [
+    HeaderComponent,
     AppComponent,
     DashboardComponent,
     HeroDetailComponent,
@@ -40,7 +42,7 @@ import { HeroSearchComponent } from './components/hero-search/hero-search.compon
     HeroService
   ], // providers는 Angular에게 AppComponent를 생성할 때 HeroService의 새로운 인스턴스를 생성하도록 지시함
   bootstrap: [
-    AppComponent
+    HeaderComponent
   ]
 })
 export class AppModule { }
