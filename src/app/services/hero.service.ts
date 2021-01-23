@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core';
 import { HttpHeaders, HttpClient } from '@angular/common/http';
 
-import { Hero } from './hero';
+import { Hero } from '../components/hero';
 
 // Injectable Decorator추가 -> TypeScript가 Service에 대한 메타 데이터를 보내도록 지시함
 // HeroService는 웹 서비스, 로컬 스토리지 또는 Mock데이터 소스와 같이 어디서나 Hero데이터를 가져올 수 있습니다.

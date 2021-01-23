@@ -1,9 +1,9 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 
-import { DashboardComponent } from './dashboard.component';
-import { HeroesComponent } from './heroes.component';
-import { HeroDetailComponent } from './hero-detail.component';
+import { DashboardComponent } from './components/dashboard/dashboard.component';
+import { HeroesComponent } from './components/heroes/heroes.component';
+import { HeroDetailComponent } from './components/hero-detail/hero-detail.component';
 
 // 라우팅 모듈은 라우트(경로)를 변수로 가져옵니다. 변수는 나중에 모듈을 export할 경우 라우팅 모듈 패턴을 명확하게 합니다.
 // 라우팅 모듈은 import에 RouterModule.forRoot(routes)를 추가합니다.

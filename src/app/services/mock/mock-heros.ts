@@ -1,4 +1,4 @@
-import { Hero } from './hero';
+import { Hero } from '../../components/hero';
 
 // Create Array - Mock data
 export const HEROES: Hero[] = [

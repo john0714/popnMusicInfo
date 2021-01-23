@@ -3,8 +3,8 @@ import { Router } from '@angular/router';
 
 import { Observable, Subject, of } from 'rxjs';
 
-import { HeroSearchService } from './hero-search.service';
-import { Hero } from './hero';
+import { HeroSearchService } from '../../services/hero-search.service';
+import { Hero } from '../hero';
 import { debounceTime, distinctUntilChanged, switchMap, catchError } from 'rxjs/operators';
 
 @Component({

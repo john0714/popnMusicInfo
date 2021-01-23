@@ -2,7 +2,7 @@ import { Component, Input, OnInit } from '@angular/core';
 import { ActivatedRoute, ParamMap } from '@angular/router';
 import { Location } from '@angular/common';
 
-import { HeroService } from './hero.service';
+import { HeroService } from '../../services/hero.service';
 import { switchMap } from 'rxjs/operators'; // switchMap 연산자를 가져와서 나중에 Observable매개 변수로 사용합니다.
 
 // @Component Decorator는 Component의 Angular메타 데이터를 제공합니다. CSS선택자 이름인 hero-detail은 상위 Component의 템플릿 내에서 이 Component를 식별하는 엘리먼트 태그와 일치합니다.

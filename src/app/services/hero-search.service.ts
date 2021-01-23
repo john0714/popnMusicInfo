@@ -3,7 +3,7 @@ import { HttpClient } from '@angular/common/http';
 
 import { Observable } from 'rxjs';
 
-import { Hero } from './hero';
+import { Hero } from '../components/hero';
 import { map } from 'rxjs/operators';
 
 @Injectable()
