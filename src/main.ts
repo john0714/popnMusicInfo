@@ -8,7 +8,5 @@ if (environment.production) {
   enableProdMode();
 }
 
-
-console.log("AppModule부터 시작됨");
 platformBrowserDynamic().bootstrapModule(AppModule)
   .catch(err => console.error(err));

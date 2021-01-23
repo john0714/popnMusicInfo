@@ -6,7 +6,7 @@
 [Angular CLI](https://github.com/angular/angular-cli) version 11.0.7.<br>
 [Angular](https://angular.io/) version 11.0.9<br>
 [Node](https://nodejs.org/en/) version 14.15.4<br>
-[TypeScript](https://www.typescriptlang.org/) version 4.0.5
+[TypeScript](https://www.typescriptlang.org/) version 4.0.5<br>
 (バージョンアップ早いな・・・)
 
 ## 起動
