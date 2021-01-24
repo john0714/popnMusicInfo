@@ -10,7 +10,7 @@ import { InMemoryWebApiModule } from 'angular-in-memory-web-api';
 import { InMemoryDataService } from './services/in-memory-data.service';
 
 import { HeaderComponent } from './components/header/header.component';
-import { AppComponent } from './components/sideMenu/app.component';
+import { SideMenuComponent } from './components/side-menu/side-menu.component';
 import { FormsModule } from '@angular/forms'; // ngModule은 FormsModule에 포함되 있으므로, FormsModule을 Import해서 사용
 import { HeroDetailComponent } from './components/hero-detail/hero-detail.component'; // 모든 컴포넌트는 하나의(그리고 오직 한번만) Angular모듈로 선언되어야함.
 import { HeroesComponent } from './components/heroes/heroes.component';
@@ -23,7 +23,7 @@ import { HeroSearchComponent } from './components/hero-search/hero-search.compon
   // 다른 Component가 참조하기 전에 Component를 모듈에서 선언해야함
   declarations: [
     HeaderComponent,
-    AppComponent,
+    SideMenuComponent,
     DashboardComponent,
     HeroDetailComponent,
     HeroesComponent,
@@ -40,7 +40,7 @@ import { HeroSearchComponent } from './components/hero-search/hero-search.compon
   ],
   providers: [
     HeroService
-  ], // providers는 Angular에게 AppComponent를 생성할 때 HeroService의 새로운 인스턴스를 생성하도록 지시함
+  ], // providers는 Angular에게 SideMenuComponent 생성할 때 HeroService의 새로운 인스턴스를 생성하도록 지시함
   bootstrap: [
     HeaderComponent
   ]
